@@ -25,53 +25,61 @@
 
     <section id="destinos" class="destinos">
         <h2>Destinos Recomendados</h2>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('París, Francia')">
             <img src="img/paris.jpg" alt="París, Francia">
             <h3>París, Francia</h3>
             <p>Disfruta de la Torre Eiffel, el arte del Louvre y la gastronomía francesa.</p>
         </div>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('Kioto, Japón')">
             <img src="img/kioto.jpg" alt="Kioto, Japón">
             <h3>Kioto, Japón</h3>
             <p>Explora templos históricos y la cultura tradicional japonesa.</p>
         </div>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('Nueva York, EE.UU.')">
             <img src="img/nueva-york.jpg" alt="Nueva York, EE.UU.">
             <h3>Nueva York, EE.UU.</h3>
             <p>Vive la energía de Times Square y Central Park.</p>
         </div>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('Santorini, Grecia')">
             <img src="img/santorini.jpg" alt="Santorini, Grecia">
             <h3>Santorini, Grecia</h3>
             <p>Relájate en una isla paradisíaca con casas blancas y mar azul.</p>
         </div>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('Machu Picchu, Perú')">
             <img src="img/machu-picchu.jpg" alt="Machu Picchu, Perú">
             <h3>Machu Picchu, Perú</h3>
             <p>Descubre una de las maravillas del mundo en los Andes.</p>
         </div>
-        <div class="destino">
+
+        <div class="destino" onclick="mostrarFormulario('Roma, Italia')">
             <img src="img/roma.jpg" alt="Roma, Italia">
             <h3>Roma, Italia</h3>
             <p>Pasea por el Coliseo y disfruta de la mejor pasta.</p>
         </div>
     </section>
 
-    <section id="reservar">
+    <section id="reservar" class="oculto">
         <h2>Reserva tu Viaje</h2>
         <form id="form-reserva">
-            <label for="destino">Elige tu destino:</label>
-            <select id="destino" name="destino">
-                <option value="paris">París, Francia</option>
-                <option value="kioto">Kioto, Japón</option>
-                <option value="nueva-york">Nueva York, EE.UU.</option>
-                <option value="santorini">Santorini, Grecia</option>
-                <option value="machu-picchu">Machu Picchu, Perú</option>
-                <option value="roma">Roma, Italia</option>
-            </select>
+            <label for="destino">Destino seleccionado:</label>
+            <input type="text" id="destino" name="destino" readonly>
 
             <label for="fecha">Selecciona la fecha:</label>
             <input type="date" id="fecha" name="fecha" required>
+
+            <label for="aerolinea">Elige una aerolínea:</label>
+            <select id="aerolinea" name="aerolinea">
+                <option value="Emirates">Emirates</option>
+                <option value="Singapore Airlines">Singapore Airlines</option>
+                <option value="Qatar Airways">Qatar Airways</option>
+                <option value="Etihad Airways">Etihad Airways</option>
+                <option value="Cathay Pacific">Cathay Pacific</option>
+            </select>
 
             <button type="submit">Reservar</button>
         </form>
