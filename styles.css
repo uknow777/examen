@@ -60,6 +60,10 @@ nav ul li a {
     margin: 0 auto;
 }
 
+.oculto {
+    display: none;
+}
+
 #reservar {
     text-align: center;
     padding: 20px;
