@@ -57,9 +57,31 @@
         </div>
     </section>
 
+    <section id="reservar">
+        <h2>Reserva tu Viaje</h2>
+        <form id="form-reserva">
+            <label for="destino">Elige tu destino:</label>
+            <select id="destino" name="destino">
+                <option value="paris">París, Francia</option>
+                <option value="kioto">Kioto, Japón</option>
+                <option value="nueva-york">Nueva York, EE.UU.</option>
+                <option value="santorini">Santorini, Grecia</option>
+                <option value="machu-picchu">Machu Picchu, Perú</option>
+                <option value="roma">Roma, Italia</option>
+            </select>
+
+            <label for="fecha">Selecciona la fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </section>
+
     <section id="contacto">
         <h2>Contacto</h2>
-        <p>Email: contacto@viajesmundo.com</p>
+        <p>Email: edwinviera17@gmail.com</p>
     </section>
 
     <script src="script.js"></script>
