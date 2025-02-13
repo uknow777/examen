@@ -34,6 +34,10 @@ nav ul li a {
     color: white;
 }
 
+.hero h2, .hero p {
+    color: black; /* Cambié el color a negro para estos elementos */
+}
+
 .destinos {
     padding: 20px;
     text-align: center;
