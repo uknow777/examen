@@ -59,3 +59,51 @@ nav ul li a {
     display: block;
     margin: 0 auto;
 }
+
+#reservar {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+
+#form-reserva label {
+    font-weight: bold;
+}
+
+#form-reserva select,
+#form-reserva input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#form-reserva button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-reserva button:hover {
+    background: #218838;
+}
+
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #28a745;
+}
